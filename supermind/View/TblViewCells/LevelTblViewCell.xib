@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="LevelTblViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="LevelTblViewCell" rowHeight="115" id="KGk-i7-Jjw" customClass="LevelTblViewCell" customModule="supermind" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="536" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="536" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelBG" translatesAutoresizingMaskIntoConstraints="NO" id="EzG-Qg-Y95">
+                        <rect key="frame" x="15" y="0.0" width="506" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="XTg-F1-e3K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Level premium is about to expire ,renew now!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kST-Hs-WcC">
+                        <rect key="frame" x="25" y="14.999999999999998" width="421" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" systemColor="labelColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t70-j0-4pZ">
+                        <rect key="frame" x="429.33333333333331" y="25" width="81.666666666666686" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-Yj-eYK">
+                                <rect key="frame" x="0.0" y="0.0" width="57" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Explore"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QtK-6k-fEG">
+                                <rect key="frame" x="61.999999999999993" y="2.9999999999999982" width="19.666666666666664" height="26.333333333333329"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="EzG-Qg-Y95" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7mo-u4-cid"/>
+                    <constraint firstAttribute="bottom" secondItem="EzG-Qg-Y95" secondAttribute="bottom" id="COF-JE-rMy"/>
+                    <constraint firstAttribute="trailing" secondItem="t70-j0-4pZ" secondAttribute="trailing" constant="25" id="EOW-Bg-uFR"/>
+                    <constraint firstAttribute="trailing" secondItem="EzG-Qg-Y95" secondAttribute="trailing" constant="15" id="K5n-xu-5fW"/>
+                    <constraint firstAttribute="bottom" secondItem="t70-j0-4pZ" secondAttribute="bottom" constant="25" id="OxE-gt-9Ec"/>
+                    <constraint firstItem="kST-Hs-WcC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="U6y-ag-yVg"/>
+                    <constraint firstItem="t70-j0-4pZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="X5d-Aj-Xma"/>
+                    <constraint firstItem="kST-Hs-WcC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="b3a-bY-qzY"/>
+                    <constraint firstAttribute="trailing" secondItem="kST-Hs-WcC" secondAttribute="trailing" constant="90" id="coZ-Mr-AXp"/>
+                    <constraint firstItem="EzG-Qg-Y95" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vkg-pU-Kgh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btn_Explore" destination="f8C-Yj-eYK" id="lna-T0-5oU"/>
+                <outlet property="img_bg" destination="EzG-Qg-Y95" id="4lm-z1-nM7"/>
+                <outlet property="lbl_title" destination="kST-Hs-WcC" id="pw2-Ld-YjL"/>
+                <outlet property="stk_btn" destination="t70-j0-4pZ" id="rzF-xz-Sdc"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="9"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="levelBG" width="4290" height="2860"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
